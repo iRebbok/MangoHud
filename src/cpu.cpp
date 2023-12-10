@@ -522,6 +522,9 @@ bool CPUStats::GetCpuFile() {
         } else if (name == "nct6797") {
             find_input(path, "temp", input, "TSI0_TEMP");
             break;
+        } else if (name == "legion_hwmon") {
+            find_input(path, "temp1", input, "CPU Temperature");
+            break;
         } else {
             path.clear();
         }
